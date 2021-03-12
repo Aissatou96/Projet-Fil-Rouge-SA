@@ -1,0 +1,11 @@
+<app-header></app-header>
+
+<div class="container">
+
+  <h2>liste Référentiels <a [routerLink]='["/addRef"]'><i class="fas fa-user-plus"></i></a></h2>
+
+  <div class="row">
+    <app-item-referentiel *ngFor="let ref of refs" class="col-sm-4 mb-4"></app-item-referentiel>
+  </div>
+ 
+</div>

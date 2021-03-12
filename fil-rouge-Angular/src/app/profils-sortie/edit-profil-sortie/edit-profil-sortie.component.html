@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<div class="container">
+
+    <h1>UPDATE PROFIL DE SORTIE</h1>
+  
+    <a [routerLink]='["/profilsSortie"]' class="btn btn-primary">Back</a>
+        
+    <form [formGroup]="profilSForm" (ngSubmit)="updateProfilSortie()">
+  
+        <div class="form-group">
+            <label for="libelle">Libelle:</label>
+            <input 
+                [formControlName]="'libelle'"
+                id="libelle" 
+                type="text" 
+                [(ngModel)]="profilSortie.libelle"
+                class="form-control">
+        </div>
+        
+        <button class="btn btn-primary" type="submit" [disabled]="!profilSForm.valid">Update</button>
+    </form>
+</div>

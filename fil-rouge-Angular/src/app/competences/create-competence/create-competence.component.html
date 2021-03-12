@@ -1,0 +1,43 @@
+<app-header></app-header>
+<div class="container">
+    <h2>CREATION COMPETENCE</h2>
+        <form [formGroup] = "competForm" (ngSubmit) = "createCompetence()">
+            <div class="form-group row">
+                <label class="col-sm-3" for="">Groupe de Compétences</label>
+                <select 
+                    class="form-select form-select-sm form-control col-sm-6" 
+                    aria-label=".form-select-sm example" 
+                    [formControlName]="'grpComp'"
+                >
+                        <option selected>Select a Groupe de compétences</option>
+                        <option *ngFor="let grpC of grpCompetences" value="{{grpC}}">{{grpC}}</option>
+                </select>
+
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3" for="lib">Compétence</label>
+                <div class="col-sm-6">
+                    <input type="text" id="lib" [formControlName]="''" placeholder="Entrer le nom de la compétence" class="form-control">
+                </div> 
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3" for="lib">Description</label>
+                <div class="col-sm-6">
+                    <input type="text" id="lib" [formControlName]="''" placeholder="Entrer le nom de la compétence" class="form-control">
+                </div> 
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3" for="">Niveau d'Evaluation</label>
+                <select class="form-select form-select-sm form-control col-sm-6" 
+                            aria-label=".form-select-sm example" [formControlName]="''">
+                                <option selected>Cochez les niveaux</option>
+                                <option multiple *ngFor="let niveauE of niveaux" value="{{niveauE}}">{{niveauE}}</option>
+                              </select>
+            </div>
+
+        </form>
+  
+</div>

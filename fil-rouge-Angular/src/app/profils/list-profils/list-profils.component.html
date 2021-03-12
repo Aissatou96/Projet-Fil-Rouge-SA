@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="container">
+  <h2> liste des Profils <a [routerLink]='["/addProfil"]'><i class="fas fa-user-plus"></i></a></h2>
+    
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Libellé</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr *ngFor="let profil of profils">
+        <td>{{ profil.id }}</td>
+        <td>{{ profil.libelle }}</td>
+        <td>
+          <a [routerLink]='["/profils/detail",profil.id]' class="btn btn-info">View</a>
+          <a [routerLink]='["/profils/edit",profil.id]' class="btn btn-primary">Edit</a>
+          <button type="button" (click)="deleteProfil(profil.id)" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <router-outlet></router-outlet>
+</div>

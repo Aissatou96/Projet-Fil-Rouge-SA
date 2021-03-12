@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="notprint">
+        <h1>DETAIL DE L'UTILISATEUR</h1>
+  
+        <a [routerLink]='["/users"]' class="btn btn-primary">Back</a>
+    </div>
+        <div class="row">
+            <div class="col-sm-4 d-flex justify-content-start" width="150px" height="150px">
+                <ngx-qrcode
+                    [elementType]="elementType"
+                    [errorCorrectionLevel]="correctionLevel"
+                    [value]="value"
+                    cssClass="bshadow">
+                </ngx-qrcode>
+            </div>
+            <div class="col-sm-4">
+                <p>PRENOM: {{user.prenom}}</p>
+
+
+                <p>NOM: {{user.nom}}</p>
+             
+
+                <p>EMAIL: {{user.email}}</p>
+           
+
+                <p>USERNAME: {{user.username}}</p>
+             
+
+                <p>PROFIL: {{user['@type']}}</p>
+            
+
+            </div>
+            <div class="col-sm-4 d-flex justify-content-end">
+                <img src="data:image/jpeg;base64,{{user.avatar }}" class="rounded-circle" width="150px" height="150px" alt="">
+            </div>
+       
+            <button class="notprint" (click)="print()">Imprimer</button>
+        </div>
+</div>

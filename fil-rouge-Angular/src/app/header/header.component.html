@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">		
+        
+        <div class="navbar-nav mr-auto">
+          
+          <div class="nav-item dropdown">
+            
+            <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><i class="fas fa-cog ml-4"></i><br><span>Paramètres</span></a>
+            <div class="dropdown-menu">
+              <a [routerLink]='["/profils"]' class="dropdown-item"><i class="far fa-id-card"></i> Profils</a>
+              <a [routerLink]='["/profilsSortie"]' class="dropdown-item"><i class="fas fa-list-ol"></i> Profils de sortie</a>
+              <a [routerLink]='["/compet"]' class="dropdown-item"><i class="fa fa-sliders"></i> Compétences</a>
+              <a [routerLink]='["/grpCompet"]' class="dropdown-item"><i class="fa fa-sliders"></i> Groupe de Compétences</a>
+              <a [routerLink]='["/refs"]' class="dropdown-item"><i class="fa fa-sliders"></i>Référentiels</a>
+              <a [routerLink]='["/addPromo"]' class="dropdown-item"><i class="fa fa-sliders"></i>Promotion</a>
+             
+            </div>
+          </div>
+          <a href="#" class="nav-item nav-link"><i class="fas fa-book-reader"></i><span>Brief</span></a>
+          <a href="#" class="nav-item nav-link"><i class="fas fa-book-reader"></i><span>Rendus</span></a>
+          <a href="#" class="nav-item nav-link"><i class="fas fa-street-view"></i><span>Explorer</span></a>
+          <a href="#" class="nav-item nav-link"><i class="fas fa-comments"></i><span>Forum</span></a>
+          
+          <a href="#" class="nav-item nav-link"><i class="fas fa-history"></i><span>Historique des promos</span></a>		
+          <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
+          
+        </div>
+
+         <div class="nav-item dropdown mr-10">
+            <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><i class="fas fa-user"></i><span>User</span></a>
+            <div class="dropdown-menu">
+              <a [routerLink]='["/addUser"]' class="dropdown-item"><i class="fa fa-user-o"></i> Create User</a>
+              <a [routerLink]='["/users"]' class="dropdown-item"><i class="fas fa-list-ol"></i> List Users</a>
+              <a [routerLink]='["/users/id/detail"]' class="dropdown-item"><i class="fa fa-sliders"></i> Détail User</a>
+              <a [routerLink]='["/users/id/edit"]' class="dropdown-item"><i class="fa fa-sliders"></i> Edit User</a>
+              <div class="divider dropdown-divider"></div>
+              <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
+            </div>
+          </div>
+
+        <!-- <form class="navbar-form form-inline">
+          <div class="input-group search-box">								
+            <input type="text" id="search" class="form-control" placeholder="Search here...">
+            <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+          </div> 		
+        </form> -->
+      </div>
+    </nav>
+    
+
+

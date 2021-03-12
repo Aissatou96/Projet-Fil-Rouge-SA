@@ -1,0 +1,41 @@
+
+<app-header></app-header>
+<div class="container">
+  <h2>LISTE DES UTILISATEURS <a [routerLink]='["/addUser"]'><i class="fas fa-user-plus"></i></a></h2>
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Avatar</th>
+        <th scope="col">Prénom</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Email</th>
+        <th scope="col">Username</th>
+        <th scope="col">Statut</th>
+        <th scope="col">Profil</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>
+          <img src="data:image/jpeg;base64,{{user.avatar }}" class="rounded-circle" width="50px" height="50px" alt="">
+        </td>
+        <td>{{ user.prenom }}</td>
+        <td>{{ user.nom }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.statut }}</td>
+        <td>{{ user.profil.libelle}}</td>
+        <td>
+          <a href="#" [routerLink]='["/users/detail",user.id]' class="btn btn-info">View</a>
+          <a href="#" [routerLink]='["/users/edit",user.id]' class="btn btn-primary">Edit</a>
+          <button type="button" (click)="deleteUser(user.id)" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+       
+        
+    </tbody>
+  </table>
+</div>

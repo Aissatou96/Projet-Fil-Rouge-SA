@@ -1,0 +1,27 @@
+<div class="container">
+    
+    <h1>DETAIL DU PROFIL: {{libelle}}</h1>
+  
+    <a [routerLink]='["/profils"]' class="btn btn-primary">Back</a>
+   
+   <table class="table tadle-bordered">
+       <thead>
+           <tr>
+               <th>ID</th>
+               <th>Prenom</th>
+               <th>Nom</th>
+               <th>Email</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr *ngFor="let user of users">
+               <td>{{user.id}}</td>
+               <td>{{user.prenom}}</td>
+               <td>{{user.nom}}</td>
+               <td>{{user.email}}</td>
+           </tr>
+       </tbody>
+
+   </table>
+    
+</div>

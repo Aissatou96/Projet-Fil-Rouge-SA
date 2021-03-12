@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="container">
+
+       <a [routerLink]='["/profils"]' class="btn btn-primary">Back</a>
+
+       <h2>Création Profil</h2>
+
+    <form [formGroup]="profilForm" (ngSubmit)="createProfil()">
+
+        <div class="form-group row">
+            <label for="lib" class="col-sm-2 col-form-label">Libelle</label>
+            <div class="col-sm-8">
+                <input type="text" id="lib" class="form-control" [formControlName]="'libelle'">
+            </div>
+        </div>
+
+    <div>
+        <button type="submit" [disabled]="!profilForm.valid" class="btn btn-primary btn-lg btn-block">
+            SOUMETTRE
+        </button>
+    </div>
+   </form>
+</div>
+

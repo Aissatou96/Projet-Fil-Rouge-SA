@@ -1,0 +1,23 @@
+<div class="container">
+
+    <h2>Création Profil de Sortie</h2>
+
+    <a [routerLink]='["/profilsSortie"]' class="btn btn-primary">Back</a>
+
+ <form [formGroup]="psForm" (ngSubmit)="createPs()">
+
+     <div class="form-group row">
+        <label for="lib" class="col-sm-2 col-form-label">Libelle</label>
+        <div class="col-sm-8">
+            <input type="text" id="lib" class="form-control" [formControlName]="'libelle'">
+        </div>
+     </div>
+
+ <div>
+     <button type="submit" [disabled]="!psForm.valid" class="btn btn-primary btn-lg btn-block">
+         SOUMETTRE
+     </button>
+ </div>
+ </form>
+</div>
+

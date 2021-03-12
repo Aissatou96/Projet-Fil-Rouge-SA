@@ -1,0 +1,93 @@
+<!-- <div class="container">
+    <h1>UPDATE REFERENTIEL</h1>
+    <form [formGroup]="RefForm" (ngSubmit)="updateRef()" >
+
+        <div class="form-group row">
+            <label for="ref" class="col-sm-2 col-form-label">Référentiel</label>
+            <div class="col-sm-6">
+              <input 
+                type="text" 
+                class="form-control" 
+                id="ref" 
+                placeholder="entrer le référentiel"
+                [formControlName]="'libelle'" 
+                [(ngModel)] = "ref.libelle"
+              >
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="pres" class="col-sm-2 col-form-label">Présentation</label>
+            <div class="col-sm-6">
+                <textarea 
+                    id="pres" 
+                    class="form-control" 
+                    [formControlName]="'presentation'" 
+                    [(ngModel)] = "ref.presentation"
+                >
+                </textarea>
+            </div>
+        </div>
+
+        <div class="form-group row">
+                <label for="comp" class="col-sm-2 col-form-label">Groupe de Compétences</label>
+                    <div class="col-sm-6">
+                        <select 
+                            class="form-select form-select-sm form-control" 
+                            aria-label=".form-select-sm example" 
+                            [formControlName]="'grpComp'"
+                            [(ngModel)] = "ref.grpComp"
+                        >    
+                            <option selected>Select a Groupe de compétences</option>
+                            <option 
+                               *ngFor="let grpC of grpCompetences" 
+                               value="{{grpC}}"
+                            >
+                                {{grpC}}
+                            </option>
+                        </select>
+                    </div>
+        </div>
+        
+        <div class="form-group row">
+            <label for="prog"  class="col-sm-2 col-form-label">Programme</label>
+            <div class="col-sm-6">
+                <input 
+                   type="file" 
+                   id="prog" 
+                   class="form-control"
+                   [formControlName]="'programme'" 
+                   [(ngModel)] = "ref.programme"
+                >
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="eval" class="col-sm-2 col-form-label">Critère d'évaluation</label>
+            <div class="col-sm-6">
+                <textarea 
+                  id="eval" 
+                  class="form-control"
+                  [formControlName]="'evaluation'" 
+                  [(ngModel)] = "ref.evaluation"
+                >
+               </textarea>
+             </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="admiss" class="col-sm-2 col-form-label">Critère d'admission</label>
+            <div class="col-sm-6">
+                <textarea 
+                   id="admiss" 
+                   class="form-control"
+                   [formControlName]="'admission'"
+                   [(ngModel)] = "ref.admission"
+                >
+                </textarea>
+            </div>
+        </div>
+        
+        <button [disabled] = "!RefForm.valid" type="submit" class="btn btn-primary">UPDATE</button>
+    </form>
+</div> -->
