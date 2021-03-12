@@ -105,7 +105,7 @@ class UserController extends AbstractController
        $em->flush();
 
        
-       return  $this->json(['message'=> 'Utilisateur créé avec succès!'], Response::HTTP_CREATED);
+       return  $this->json(['message'=> 'Utilisateur modifiée avec succès!'], Response::HTTP_CREATED);
 
       
     }
