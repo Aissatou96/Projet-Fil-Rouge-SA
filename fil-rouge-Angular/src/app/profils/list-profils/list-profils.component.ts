@@ -17,9 +17,9 @@ export class ListProfilsComponent implements OnInit {
     this.profilService.getAll().subscribe((data: Profil[])=>{
       this.profils = data['hydra:member'];
       console.log(this.profils);
-    })  
+    })
   }
-  
+
   deleteProfil(id){
     this.profilService.delete(id).subscribe(res => {
          this.profils = this.profils.filter(item => item.id !== id);

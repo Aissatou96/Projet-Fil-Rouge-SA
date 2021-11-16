@@ -53,11 +53,11 @@ class UserController extends AbstractController
        
         $username = $user['username'];
         $newUser = $serializer->denormalize($user, $typeUser);
-        $errors = $validator->validate($newUser);
-        if (@count($errors)) {
-            $errors = $serializer->serialize($errors, "json");
-            return new JsonResponse($errors, Response::HTTP_BAD_REQUEST, [], true);
-        }
+        // $errors = $validator->validate($newUser);
+        // if (@count($errors)) {
+        //     $errors = $serializer->serialize($errors, "json");
+        //     return new JsonResponse($errors, Response::HTTP_BAD_REQUEST, [], true);
+        // }
         $newUser->setProfil($profilRepository->findOneBy(['libelle'=>$type]));
         $newUser->setPassword($encoder->encodePassword($newUser,$password));
 

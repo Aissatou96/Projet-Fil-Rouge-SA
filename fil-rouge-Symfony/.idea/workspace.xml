@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec1d9968-b9a6-4e64-93da-a67efface922" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PFR_Backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PFR_Backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataPersister/ProfilDataPersister.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataPersister/ProfilDataPersister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/ProfilDeSortie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ProfilDeSortie.php" afterDir="false" />
-    </list>
+    <list default="true" id="ec1d9968-b9a6-4e64-93da-a67efface922" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -134,6 +126,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lpdKzmpAIgi51NFPNURI2W81tB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -142,7 +135,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../APP-MONEY-SA/App_Mobile_Backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../APP-MONEY-SA/Mobile-Backend" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -159,6 +152,7 @@
       <workItem from="1615491038626" duration="16000" />
       <workItem from="1615491741240" duration="96000" />
       <workItem from="1615492502500" duration="158000" />
+      <workItem from="1622127162807" duration="2046000" />
     </task>
     <servers />
   </component>
